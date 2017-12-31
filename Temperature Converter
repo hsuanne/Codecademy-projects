@@ -1,0 +1,9 @@
+//This program converts Kelvin to Fahrenheit and round it down to the largest integer.
+const kelvin = prompt('What is the Kelvin temperature today?');
+const celsius = kelvin - 273;
+let fahrenheit = celsius * (9/5) + 32;
+
+//round the F temperature
+fahrenheit = Math.floor(fahrenheit);
+
+console.log(`The temperature is ${fahrenheit} degrees fahrenheit.`);
