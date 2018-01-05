@@ -1,0 +1,32 @@
+class Dog {
+  
+  int age;
+
+//constructor  
+public Dog(int dogsAge){
+  age = dogsAge;
+}
+
+//bark is a method  
+  public void bark() {
+    System.out.println("Woof!");
+  }
+//we can customize methods to accept parameters  
+  public void run(int feet){
+    System.out.println("Your dog ran " + feet + " feet!");
+  }
+//void means a method doesn't return a value
+//data types such as int and car return a value
+  public int getAge() {
+    return age;  
+  }
+	public static void main(String[] args) {
+		//spike is an object
+    Dog spike = new Dog(2);
+    spike.bark();
+    spike.run(5);
+    
+    int spikeAge = spike.getAge();
+    System.out.println(spikeAge);
+	}
+}
